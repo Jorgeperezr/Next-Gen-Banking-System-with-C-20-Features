@@ -1,0 +1,19 @@
+{
+    "name": "Next-Gen Banking (C++20)",
+    "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-24.04",
+    "postCreateCommand": "sudo apt-get update && sudo apt-get install -y cmake g++ gdb && g++ --version",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools",
+                "twxs.cmake"
+            ],
+            "settings": {
+                "cmake.configureOnOpen": true,
+                "C_Cpp.default.cppStandard": "c++20",
+                "editor.formatOnSave": true
+            }
+        }
+    }
+}
